@@ -99,6 +99,7 @@ p{
 	margin: auto;
 	padding-left: 25px;
 	padding-right: 25px;
+	cursor: default;
 }
 .title{
 	text-align: center;
@@ -165,22 +166,43 @@ select{
 select:focus{
 	outline: none;
 }
-.page-btn{
-	margin: 0 auto 80px;
-}
-.page-btn span{
+.btn1{
 	display: inline-block;
-	border: 1px solid #ff523b;
-	margin-left: 10px;
-	width: 40px;
-	height: 40px;
-	text-align: center;
-	line-height: 40px;
-	cursor: pointer;
-}
-.page-btn span:hover{
-	background:  #ff523b;
+	background: #ff523b;
 	color: #fff;
+	padding: 8px 30px;
+	position: relative;
+	margin-left: 530px;
+	border-radius: 30px;
+	transition: background 0.5s;
+}
+.btn1:hover{
+	background: #563434;
+}
+
+/*--------- single product details ---------*/
+
+.single-product{
+	margin-top: 20px;
+}
+.single-product .col-2 img{
+	padding: 0;
+}
+.single-product .col-2{
+	padding: 20px;
+}
+.single-product h3{
+	margin-left: 20px 0;
+	font-size: 22px;
+	font-weight: bold;
+}
+.small-img-row{
+	display: flex;
+	justify-content: space-between;
+}
+.small-img-col{
+	flex-basis: 24%;
+	cursor: pointer;
 }
 
 /*----------------- about -----------------*/
