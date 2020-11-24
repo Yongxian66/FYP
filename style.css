@@ -165,22 +165,30 @@ select{
 select:focus{
 	outline: none;
 }
-.page-btn{
-	margin: 0 auto 80px;
+
+/*--------- single product details ---------*/
+
+.single-product{
+	margin-top: 20px;
 }
-.page-btn span{
-	display: inline-block;
-	border: 1px solid #ff523b;
-	margin-left: 10px;
-	width: 40px;
-	height: 40px;
-	text-align: center;
-	line-height: 40px;
+.single-product .col-2 img{
+	padding: 0;
+}
+.single-product .col-2{
+	padding: 20px;
+}
+.single-product h3{
+	margin-left: 20px 0;
+	font-size: 22px;
+	font-weight: bold;
+}
+.small-img-row{
+	display: flex;
+	justify-content: space-between;
+}
+.small-img-col{
+	flex-basis: 24%;
 	cursor: pointer;
-}
-.page-btn span:hover{
-	background:  #ff523b;
-	color: #fff;
 }
 
 /*----------------- about -----------------*/
