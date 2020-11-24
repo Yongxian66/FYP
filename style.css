@@ -165,6 +165,19 @@ select{
 select:focus{
 	outline: none;
 }
+.btn1{
+	display: inline-block;
+	background: #ff523b;
+	color: #fff;
+	padding: 8px 30px;
+	position: relative;
+	margin-left: 530px;
+	border-radius: 30px;
+	transition: background 0.5s;
+}
+.btn1:hover{
+	background: #563434;
+}
 
 /*--------- single product details ---------*/
 
