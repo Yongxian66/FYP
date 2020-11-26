@@ -21,9 +21,10 @@
 		<li><a href="about.html">About</a></li>
 		<li><a href="#">Help Center</a></li>
 		<li><a href="loginpanel.html">Account</a></li>
+		<li><a href="cart.html"><img src="image/cart.png" width="40px" height="40px"></a></li>
 		</ul>
 	</nav>
-	<a href="cart.html"><img src="image/cart.png" width="40px" height="40px">
+	
 </div>
 </div>
 
@@ -32,20 +33,20 @@
 	<div class="small-container single-product">
 		<div class="row">
 			<div class="col-2">
-				<img src="image/product2.jpg" width="100%">
+				<img src="image/product2.jpg" width="100%" id="ProductImg">
 
 				<div class="small-img-row">
 					<div class="small-img-row">
-						<img src="image/tolv1.jpg" width="100%">
+						<img src="image/product2.jpg" width="100%" class="small-img">
 					</div>
 					<div class="small-img-row">
-						<img src="image/tolv2.jpg" width="100%">
+						<img src="image/tolv1.jpg" width="100%" class="small-img">
 					</div>
 					<div class="small-img-row">
-						<img src="image/tolv3.jpg" width="100%">
+						<img src="image/tolv2.jpg" width="100%" class="small-img">
 					</div>
 					<div class="small-img-row">
-						<img src="image/tolv4.jpg" width="100%">
+						<img src="image/tolv3.jpg" width="100%" class="small-img">
 					</div>
 			</div>
 		</div>
@@ -53,10 +54,22 @@
 				<h1>Tolv</h1>
 				<h4>Sudio Tolv is freedom. Freedom from cords with True Wireless technology. Freedom to listen longer, with high performance battery life. It's the freedom to listen comfortably and easily with class-leading sound quality. Freedom is hear.</h4><br>
 				<h3>RM549.00</h3>
+				<button class="btn" onclick="showAlert()">Add To Cart</button>
+				<script>
+					function showAlert() {
+						alert("Item Added To Cart.");
+					}
+				</script>
 			</div>
 	</div>
-	<a href="" class="btn" style="position: relative;left: 530px;top: -150px;">Add To Cart</a>
 
+<!------title------->
+	<div class="small-container">
+		<div class="row row-2">
+			<h2>Related Products</h2>
+			<a href="product.html">View more</a>
+		</div>
+	</div>
 
 <div class="categories">
 	<div class="small-container">
@@ -126,6 +139,30 @@
 		<a href="https://twitter.com/" class="d2" target="_blank"><img src="image/twi.png" title="Twitter" alt="Twitter" width="25px" height="25px"></a>
 		<a href="https://instagram.com/" class="d2" target="_blank"><img src="image/ig.png" title="Instagram" alt="Instagram" width="25px" height="25px"></a>
 	</div>
+
+<!---------js for product gallery ------>
+
+	<script>
+		var ProductImg = document.getElementById("ProductImg");
+		var SmallImg = document.getElementsByClassName("small-img");
+
+			SmallImg[0].onclick = function()
+			{
+				ProductImg.src = SmallImg[0].src;
+			}
+			SmallImg[1].onclick = function()
+			{
+				ProductImg.src = SmallImg[1].src;
+			}
+			SmallImg[2].onclick = function()
+			{
+				ProductImg.src = SmallImg[2].src;
+			}
+			SmallImg[3].onclick = function()
+			{
+				ProductImg.src = SmallImg[3].src;
+			}
+	</script>
 
 </body>
 </html>
